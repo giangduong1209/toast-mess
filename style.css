@@ -32,7 +32,7 @@ body > div {
     padding: 20px 0px;
     border-left: 4px solid;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
-    animation: fadeIn ease .3s, fadeOut linear 1s 3s forwards;
+    transition:  all linear .2s;
 }
 
 @keyframes fadeIn{
