@@ -32,7 +32,7 @@ body > div {
     padding: 20px 0px;
     border-left: 4px solid;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
-    animation: fadeIn ease .3s, fadeOut linear 1s 3s;
+    animation: fadeIn ease .3s, fadeOut linear 1s 3s forwards;
 }
 
 @keyframes fadeIn{
@@ -112,3 +112,30 @@ body > div {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 48px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: opacity .2s ease;
+    min-width: 120px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+  }
+
+.btn--success{
+    background-color: #47d664;
+}
+
+.btn--danger{
+    background-color: #ff5555;
+
+}
+
+.btn + .btn {
+    margin-left: 16px;
+  }
