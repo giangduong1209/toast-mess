@@ -16,6 +16,12 @@ body > div {
     
 }
 
+#toast{
+    position: fixed;
+    top: 32px;
+    right: 32px;
+}
+
 .toast{
     display: flex;
     background-color: #fff;
@@ -26,6 +32,24 @@ body > div {
     padding: 20px 0px;
     border-left: 4px solid;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    animation: fadeIn ease .3s, fadeOut linear 1s 3s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
 }
 
 .toast-success{
@@ -78,6 +102,8 @@ body > div {
 .toast__msg{
     font-size: 14px;
     color: #888;
+    line-height: 1.5;
+    margin-top: 5px;
 }
 
 .toast__close{
@@ -85,3 +111,4 @@ body > div {
     cursor: pointer;
     color: rgba(0, 0, 0, 0.3);
 }
+
