@@ -9,7 +9,7 @@ This's toast message programing by using BEM CSS standard and DOM Js.
 
 
 
-![](assets/20210729_183323_Screenshot_2021-07-29 183231.png)
+![](assets/20210729_183751_image.png)
 
 
 
