@@ -26,7 +26,9 @@ body > div {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
 }
 
-
+.toast + .toast{
+    margin-top: 24px;
+}
 
 .toast__icon{
     font-size: 24px;
