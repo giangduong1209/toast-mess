@@ -4,10 +4,10 @@ function toast({
     type = '',
     duration = 3000
 })  {
-    const main = document.getElementById('toast');
+    const main = document.getElementById("toast");
     if(main){
-        const toast = document.createElement('div')
-        toast.classList.add('toast')
+        const toast = document.createElement("div")
+        toast.classList.add("toast", `toast-${type}`)
         toast.innerHTML = `
             <div class="toast__icon">
                 <i class="fas fa-check"></i>
