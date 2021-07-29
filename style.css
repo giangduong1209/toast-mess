@@ -68,11 +68,11 @@ body > div {
     color: #3185eb;
 }
 
-.toast-fail{
+.toast-danger{
     border-color: #ff5555;
 }
 
-.toast-fail .toast__icon{
+.toast-danger .toast__icon{
     color: #ff5555;
 }
 
