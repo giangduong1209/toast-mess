@@ -14,15 +14,27 @@
         <!-- Success -->
     </div>
 
-    <div class="btn btn--success">Thành công</div>
-    <div class="btn btn--danger">Thất bại</div>
+    <div onclick="showSuccessToast()" class="btn btn--success">Thành công</div>
+    <div onclick="showErrorToast()" class="btn btn--danger">Thất bại</div>
     <script>
-        toast({
-            title: "Thành công",
-            message: "Bạn đã đăng ký thành công",
-            type: "danger",
-            duration: 3000
-        })
+        function showSuccessToast(){
+            toast({
+                title: "Thành công",
+                message: "Bạn đã đăng ký tài khoản thành công.",
+                type: "success",
+                duration: 3000
+            })
+        }
+        
+        function showErrorToast(){
+            toast({
+                title: "Thất bại",
+                message: "Bạn đã đăng ký tài khoản thất bại.",
+                type: "danger",
+                duration: 3000
+            })
+        }
+        
     </script>
 </body>
 </html>
